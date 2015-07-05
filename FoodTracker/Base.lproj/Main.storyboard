@@ -22,7 +22,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrK-TD-gI4">
                                 <rect key="frame" x="20" y="80" width="83.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N8d-eA-5Vg">
@@ -47,6 +47,10 @@
                                     <outletCollection property="gestureRecognizers" destination="b4l-Km-IgV" appends="YES" id="KqN-FG-gCD"/>
                                 </connections>
                             </imageView>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="4vw-SJ-HLh" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                <rect key="frame" x="20" y="486" width="560" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -54,11 +58,14 @@
                             <constraint firstAttribute="leadingMargin" secondItem="UrK-TD-gI4" secondAttribute="leading" id="EaB-6Y-UJp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LmK-Jc-jVi" secondAttribute="trailing" id="Gmj-eP-aGT"/>
                             <constraint firstAttribute="leadingMargin" secondItem="N8d-eA-5Vg" secondAttribute="leading" id="KZk-b2-SeE"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4vw-SJ-HLh" secondAttribute="leading" id="Ua4-Pb-VGJ"/>
                             <constraint firstAttribute="leadingMargin" secondItem="v4f-2a-8sI" secondAttribute="leading" id="ZcH-fW-A9G"/>
                             <constraint firstItem="v4f-2a-8sI" firstAttribute="top" secondItem="N8d-eA-5Vg" secondAttribute="bottom" constant="12" id="axx-lr-93k"/>
                             <constraint firstAttribute="leadingMargin" secondItem="LmK-Jc-jVi" secondAttribute="leading" id="brb-6P-XbZ"/>
                             <constraint firstItem="N8d-eA-5Vg" firstAttribute="top" secondItem="UrK-TD-gI4" secondAttribute="bottom" constant="12" id="eIN-Ra-8VT"/>
+                            <constraint firstItem="4vw-SJ-HLh" firstAttribute="top" secondItem="LmK-Jc-jVi" secondAttribute="bottom" constant="26" id="kJ6-Et-dWO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="N8d-eA-5Vg" secondAttribute="trailing" id="moO-UX-zXz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4vw-SJ-HLh" secondAttribute="trailing" id="rAB-mU-6ri"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LmK-Jc-jVi" secondAttribute="bottom" constant="140" id="rZm-fO-Ibf"/>
                             <constraint firstItem="LmK-Jc-jVi" firstAttribute="top" secondItem="v4f-2a-8sI" secondAttribute="bottom" constant="29" id="yDn-Yu-pPJ"/>
                         </constraints>

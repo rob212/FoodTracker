@@ -68,7 +68,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         imagePickerController.delegate = self
         
         presentViewController(imagePickerController, animated: true, completion: nil)
-
     }
 
 }
